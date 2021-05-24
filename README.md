@@ -35,7 +35,7 @@ insert  into `Employee`(`EmployeeID`,`FirstName`,`LastName`,`City`,`State`) valu
 (11014,'Anton','Savar','NY','NY');
 
 
-/*Table structure for table `Payments` */
+/*Table structure for table `Payments`  */
 
 DROP TABLE IF EXISTS `Payments`;
 
@@ -47,7 +47,7 @@ CREATE TABLE `Payments` (
   CONSTRAINT `Payments_ibfk_1` FOREIGN KEY (`EmployeeID`) REFERENCES `Employee` (`EmployeeID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-/*Data for the table `Payments` */
+/*Data for the table `Payments`  */
 
 insert  into `Payments`(`EmployeeID`,`SalaryDate`,`MounthID`,`Value`) values 
 
